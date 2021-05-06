@@ -43,3 +43,6 @@ ___
 >Add me on Discord.
 
 • HiTechGen#0234
+
+## Contributors
+[Unavailable for a moment]
