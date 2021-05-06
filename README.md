@@ -10,7 +10,7 @@ ___
 
 ![](.github/prev1.png)
 ___
-<p align="center">Play Animation Preview</p>
+<p align="center">Animation Preview</p>
 
 ![](.github/prev3.gif)
 
