@@ -5,15 +5,15 @@
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
 <center>
   
-![](.github/prev2.png)
+<div style="text-align:center"><img src=".github\prev1.png" /></div>
 ___
 <p align="center">Archive Extraction and Image Sequencing</p>
 
-![](.github/prev1.png)
+<div style="text-align:center"><img src=".github\prev2.png" /></div>
 ___
 <p align="center">Animation Preview</p>
 
-![](.github/prev3.gif)
+<div style="text-align:center"><img src=".github\prev3.gif" /></div>
 
 </center>
 # Description
