@@ -13,10 +13,10 @@ ___
 
 ![](.github/prev2.png)
 
-# FAQs
+# Bugs & Errors
 [Unavailable for a moment].
 
-# Bugs & Errors
+# FAQs
 [Unavailable for a moment].
 
 # Feedback
