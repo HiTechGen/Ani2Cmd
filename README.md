@@ -13,9 +13,6 @@ ___
 # Description
 [Unavailable for a moment].
 
-# Bugs & Errors
-[Unavailable for a moment].
-
 # FAQs
 [Unavailable for a moment].
 
