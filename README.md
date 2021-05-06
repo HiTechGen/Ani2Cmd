@@ -3,7 +3,6 @@
 
 # Showcase
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
-<center>
   
 <p align="center">
   <img src=".github\prev1.png" alt="Sublime's custom image"/>
@@ -22,8 +21,8 @@ ___
 <p align="center">
   <img src=".github\prev3.gif" alt="Sublime's custom image"/>
 </p>
+___
 
-</center>
 # Description
 [Unavailable for a moment].
 
