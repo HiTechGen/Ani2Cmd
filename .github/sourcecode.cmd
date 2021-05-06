@@ -18,7 +18,7 @@ If !errorlevel! Equ 3 (
 :Conv
 If Exist "source\*.mp4" (
     Cls
-    Echo.[List of available video]
+    Echo.[List of unconverted video]
     Echo.
     For /f "Tokens=*" %%A In ('Dir /b "source"') Do If /i "%%~xA" == ".mp4" Echo.• %%~nA
     Echo.
@@ -41,7 +41,7 @@ If Exist "source\*.mp4" (
 :Unzip
 If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
     Cls
-    Echo.[List of available video]
+    Echo.[List of available archived video]
     Echo.
     For /f "Tokens=*" %%A In ('Dir /b "source"') Do If /i "%%~xA" == ".zip" Echo.• %%~nA
     Echo.
