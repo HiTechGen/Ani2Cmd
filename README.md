@@ -3,7 +3,7 @@
 
 # Showcase
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
-
+<center>
 ![](.github/prev2.png)
 ___
 <p align="center">Archive Extraction and Image Sequencing</p>
@@ -13,7 +13,7 @@ ___
 <p align="center">Animation Preview</p>
 
 ![](.github/prev3.gif)
-
+</center>
 # Description
 [Unavailable for a moment].
 
