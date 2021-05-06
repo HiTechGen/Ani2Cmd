@@ -7,7 +7,7 @@
 # Showcase
 
 ![](.github/prev1.png)
-_
+________
 
 # FAQs
 >[Unavaible for a moment]
