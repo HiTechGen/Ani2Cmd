@@ -1,9 +1,10 @@
 # Ani2Cmd
 ________________________________________
 # Introduction
->This program allows the user to play animated video in batch file.
+>I present you a program that allows the user to play animated video in batch file.
 
 # Showcase
+>Archive extraction and video play.
 ________________________________________
 ![](.github/prev1.png)
 ________________________________________
