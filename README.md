@@ -5,10 +5,10 @@
 >[Unavailable for a moment].
 
 # Showcase
->Archive Extraction & Image Sequencing.
+>Archive Extraction abd Image Sequencing.
 ![](.github/prev1.png)
 ___
->Video Conversion Menu & Video Selection Menu.
+>Video Select & Convert and Video Select & Play UI Menu.
 ![](.github/prev2.png)
 
 # FAQs
