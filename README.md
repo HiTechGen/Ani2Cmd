@@ -12,7 +12,7 @@ ___
 ___
 <p align="center">Archive Extraction and Image Sequencing</p>
 
-<video src=".github\prev3.mp4">
+![](.github/prev3.gif)
 
 # Description
 [Unavailable for a moment].
