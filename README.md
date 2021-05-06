@@ -16,3 +16,7 @@ ___
 
 # Bugs & Errors
 >[Unavailable for a moment].
+
+# Feedback
+> To report your complain please sent me an e-mail via gmail.com
+techlord4lyfans@gmail.com
