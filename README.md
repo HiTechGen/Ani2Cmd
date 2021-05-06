@@ -5,26 +5,23 @@
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
 <center>
   
-<div style="text-align:center">
-
-![](.github/prev1.png)
-</div>
+<p align="center">
+  <img src=".github\prev1.png" alt="Sublime's custom image"/>
+</p>
 
 ___
 <p align="center">Archive Extraction and Image Sequencing</p>
 
-<div style="text-align:center">
-
-![](.github/prev2.png)
-</div>
+<p align="center">
+  <img src=".github\prev2.png" alt="Sublime's custom image"/>
+</p>
 
 ___
 <p align="center">Animation Preview</p>
 
-<div style="text-align:center">
-
-![](.github/prev3.gif)
-</div>
+<p align="center">
+  <img src=".github\prev3.gif" alt="Sublime's custom image"/>
+</p>
 
 </center>
 # Description
