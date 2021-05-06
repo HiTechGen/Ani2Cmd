@@ -28,7 +28,7 @@ ___
 [Unavailable for a moment].
 
 # Update
-[Unavailable for a moment].
+> Official release version.
 
 # FAQs
 [Unavailable for a moment].
