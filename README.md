@@ -45,8 +45,4 @@ ___
 • HiTechGen#0234
 ___
 ### Contributors
-<marquee direction="right">
-
-[Unavailable for a moment]
-
-</marquee>
+<marquee direction="right">[Unavailable for a moment]</marquee>
