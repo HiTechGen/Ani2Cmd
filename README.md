@@ -21,6 +21,7 @@ ___
 <p align="center">
   <img src=".github\prev3.gif" alt="Sublime's custom image"/>
 </p>
+
 ___
 
 # Description
