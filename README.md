@@ -8,7 +8,7 @@
 >Archive Extraction and Image Sequencing.
 ![](.github/prev1.png)
 ___
->Video Select & Convert and Video Select & Play UI Menu.
+>Video Select & Play and Video Select & Convert UI Menu.
 ![](.github/prev2.png)
 
 # FAQs
