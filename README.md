@@ -18,5 +18,6 @@ ___
 >[Unavailable for a moment].
 
 # Feedback
->  To submit your feedback & complain please send me an e-mail thru gmail.com
-techlord4lyfans@gmail.com
+To submit your feedback please send your statement on the following link:
+>techlord4lyfans@gmail.com
+>https://www.facebook.com/hitechgen.hi
