@@ -1,5 +1,5 @@
 # Ani2Cmd
->Ani2Cmd (Animated To Cmd) a.k.a Batch File. Is a program that allows the user to play animated video in batch file.
+Ani2Cmd (Animated To Cmd) a.k.a Batch File. Is a program that allows the user to play animated video in batch file.
 
 # Description
 [Unavailable for a moment].
