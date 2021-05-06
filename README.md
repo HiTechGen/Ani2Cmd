@@ -2,12 +2,12 @@
 >Ani2Cmd is a program that allows the user to play animated video in batch file.
 
 # Description
->[Unavailabe for a moment]
+>[Unavailable for a moment].
 
 # Showcase
-
+>Archive Extraction & Image sequencing.
 ![](.github/prev1.png)
 ___
 
 # FAQs
->[Unavaible for a moment]
+>[Unavailable for a moment].
