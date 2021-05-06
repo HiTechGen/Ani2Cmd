@@ -1,12 +1,10 @@
 <h1 align="center">Ani2Cmd</h1>
 <p align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</p>
 
-<h3 align="center">Showcase</h3>
+<h2 align="center">Showcase</h2>
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
   
-<p align="center">
-  <img src=".github\prev1.png" alt="Sublime's custom image"/>
-</p>
+<p align="center"><img src=".github\prev1.png" alt="Sublime's custom image"/></p>
 
 ___
 <p align="center">Archive Extraction and Image Sequencing</p>
