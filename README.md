@@ -5,7 +5,9 @@
 >[Unavailabe for a moment]
 
 # Showcase
+
 ![](.github/prev1.png)
+_
 
 # FAQs
 >[Unavaible for a moment]
