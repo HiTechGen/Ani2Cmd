@@ -13,3 +13,5 @@ ___
 
 # FAQs
 >[Unavailable for a moment].
+
+# Bugs & Errors
