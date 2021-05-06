@@ -27,7 +27,7 @@ ___
 ## Description
 [Unavailable for a moment].
 
-## Update
+## Update Version
 > Official release version.
 
 # FAQs
