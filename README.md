@@ -34,8 +34,12 @@ ___
 [Unavailable for a moment].
 
 # Feedback
->To submit your feedback please send your statement in the following link:
+>To submit your feedback please send your statement in the following social media link:
 
 • techlord4lyfans@gmail.com
 
 • https://www.facebook.com/hitechgen.hi
+
+>Add me on Discord.
+
+• HiTechGen#0234
