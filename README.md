@@ -30,7 +30,7 @@ ___
 ## Update
 > Official release version.
 
-## FAQs
+# FAQs
 [Unavailable for a moment].
 
 # Feedback
