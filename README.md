@@ -45,4 +45,4 @@ ___
 • HiTechGen#0234
 ___
 ### Contributors
-<font color="rgb(255,0,0)">[Unavailable for a moment]
+<font color="red">[Unavailable for a moment]
