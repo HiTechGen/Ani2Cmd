@@ -1,4 +1,4 @@
-# Ani2Cmd
+<h1>Ani2Cmd</h1>
 <p align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</p>
 
 ## Showcase
