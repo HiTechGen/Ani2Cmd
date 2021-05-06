@@ -1,7 +1,7 @@
 # Ani2Cmd
 <p align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</p>
 
-# Showcase
+## Showcase
 <p align="center">Video Select & Play and Video Select & Convert UI Menu</p>
   
 <p align="center">
@@ -24,13 +24,13 @@ ___
 
 ___
 
-# Description
+## Description
 [Unavailable for a moment].
 
-# Update
+## Update
 > Official release version.
 
-# FAQs
+## FAQs
 [Unavailable for a moment].
 
 # Feedback
@@ -44,5 +44,5 @@ ___
 
 • HiTechGen#0234
 
-## Contributors
+### Contributors
 [Unavailable for a moment]
