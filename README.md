@@ -18,5 +18,5 @@ ___
 >[Unavailable for a moment].
 
 # Feedback
-> To report your complain please sent me an e-mail via gmail.com
+>  To submit your feedback & complain please send me an e-mail thru gmail.com
 techlord4lyfans@gmail.com
