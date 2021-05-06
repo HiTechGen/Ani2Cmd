@@ -5,7 +5,5 @@
 >[Unavailabe]
 
 # Showcase
->Extraction and play preview.
-________________________________________
 ![](.github/prev1.png)
-________________________________________
+
