@@ -5,9 +5,10 @@
 >[Unavailable for a moment].
 
 # Showcase
->Archive Extraction & Image sequencing.
+>Archive Extraction & Image Sequencing.
 ![](.github/prev1.png)
 ___
+![](.github/prev2.png)
 
 # FAQs
 >[Unavailable for a moment].
