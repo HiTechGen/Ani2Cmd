@@ -28,6 +28,7 @@ ___
 >A: This occur because "cmddraw" loads the frame similar to a retro tv.
 <br>
 <b>Factors that might cause the visual lines to appear:</b>
+
 • [Unavailable for a moment].
 
 >Q: I already convert/extracted the video but why it won't play?
