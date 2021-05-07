@@ -18,7 +18,7 @@ ___
 ## Description
 [Unavailable for a moment].
 
-## Update
+## Updates
 >This is the only official release.
 
 # FAQs
