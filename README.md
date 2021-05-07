@@ -58,7 +58,7 @@ ___
 
 📧 techlord4lyfans@gmail.com
 
-🇫 [Facebook](https://www.facebook.com/hitechgen.hi)
+F [Facebook](https://www.facebook.com/hitechgen.hi)
 
 >Add me on Discord.
 
@@ -66,3 +66,4 @@ ___
 ___
 <h3 align="center">CONTRIBUTORS</h3>
 <p align="center"><img src=".github\contributors.png" width="50%;" height="50%;"></p>
+<h6 align="center">Thanks for contributing😄</h6>
