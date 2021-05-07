@@ -36,6 +36,13 @@ ___
 
 >A2: You should disable administrator first before you run the program.
 
+>Q3: Why it do nothing when I input the video archive in extract/convert UI?
+
+>A3: You probably don't have powershell installed in your PC.
+
+<b>Click the link below to download powershell:</b>
+• https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1
+
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
 
