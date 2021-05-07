@@ -26,6 +26,7 @@ If Exist "source\*.mp4" (
     Set /p "video=Video name » "
     If Not Defined video Goto :Menu
     If Not Exist "source\!video!.mp4" Goto :Conv
+    If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
     For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
