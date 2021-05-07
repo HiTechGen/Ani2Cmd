@@ -32,7 +32,7 @@ ___
 • [Unavailable for a moment].
 ___
 >Q2: I already extract the video archive but why it won't play?
-<img src=".github\contributors.png" width="10%;" height="10%;">
+<img src=".github\prev5.jpg" width="80%;" height="80%;">
 
 >A2: You should disable the administrator first before you run the program.
 
@@ -60,4 +60,4 @@ ___
 • HiTechGen#0234
 ___
 ### Contributors
-<img src=".github\unknown.png" width="10%;" height="10%;">
+<img src=".github\contributors.png" width="10%;" height="10%;">
