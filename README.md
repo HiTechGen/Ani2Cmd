@@ -51,7 +51,7 @@ ___
 >Q4: Why there's no sound!?
 
 >A4: As stated in the "Description", it doesn't support audio due to the complicated syncing of both video & audio.
-But maybe it'll be possible in the future :)
+But maybe it'll be possible soon or you're that person who'll make it possible :)
 ___
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
