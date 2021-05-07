@@ -1,4 +1,4 @@
-<p align="center"><img src=".github\tite.png" width="100%;" height="100%;"></p>
+<p align="center"><img src=".github\title.png" width="100%;" height="100%;"></p>
 <p align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</p>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
