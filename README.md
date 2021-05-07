@@ -60,4 +60,4 @@ ___
 • HiTechGen#0234
 ___
 ### Contributors
-[Unavailable for a moment].
+<img src=".github\unknown.png" width="50%;" height="50%;">
