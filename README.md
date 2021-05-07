@@ -28,6 +28,8 @@ ___
 >Q: Why does visual lines appears when I play the animation?
 <img src=".github\prev4.jpg" width="256px" height="128px">
 <em>A</em>: This occurs because <em><b>cmddraw.exe</b></em> loads the frame similar to a crt retro tv.
+<b>Factors that might cause visual lines to occur:</b>
+• [Unavailable for a moment].
 
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
