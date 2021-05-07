@@ -23,7 +23,7 @@ ___
 
 # FAQs
 >Q1: Why does visual lines appears when I play the animation?
-<img src=".github\prev4.jpg" width="25%;" height="25%;">
+<img src=".github\prev4.jpg" width="50%;" height="50%;">
 
 >A1: It occurs because "cmddraw" loads the frame similar to a retro tv.
 <br>
@@ -32,7 +32,7 @@ ___
 • [Unavailable for a moment].
 
 >Q2: I already extracted the video but why it won't play?
-<img src=".github\prev5.jpg" width="25%;" height="25%;">
+<img src=".github\prev5.jpg" width="50%;" height="50%;">
 
 >A2: You should disable administrator first before you run the program.
 
