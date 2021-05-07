@@ -31,7 +31,7 @@ ___
 
 • [Unavailable for a moment].
 
->Q2: I already extract the video but why it won't play?
+>Q2: I already extract the video archive but why it won't play?
 <img src=".github\prev5.jpg" width="50%;" height="50%;">
 
 >A2: You should disable administrator first before you run the program.
