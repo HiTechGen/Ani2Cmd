@@ -1,10 +1,5 @@
-<style>
-  h3 {
-    font-size: 10px;
-  }
-</style>
 <p align="center"><img src=".github\title.png" width="50%;" height="50%;"></p>
-<h3 align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</h3>
+<h6 align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</h6>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
 <p align="center">Archive Extraction and Image Sequencing</p>
