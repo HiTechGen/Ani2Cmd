@@ -60,4 +60,4 @@ ___
 • HiTechGen#0234
 ___
 ### Contributors
-<img src=".github\contributors.png" width="10%;" height="10%;">
+<img src=".github\contributors.png" width="50%;" height="50%;">
