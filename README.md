@@ -23,14 +23,14 @@ ___
 
 # FAQs
 >Q: Why does visual lines appears when I play the animation?
-![](.github/prev4.jpg)
+<img src=".github\prev4.jpg" width="20%;" height="20%;">
 
 >A: This occur because "cmddraw" loads the frame similar to a retro tv.
 <br>
 <b>Factors that might cause the visual lines to appear:</b>
 
 >Q: I've already convert/extracted the video but why it won't play?
-![](.github/prev5.jpg)
+<img src=".github\prev5.jpg" width="20%;" height="20%;">
 
 • [Unavailable for a moment].
 
