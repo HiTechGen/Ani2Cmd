@@ -26,7 +26,7 @@ ___
 
 # FAQs
 >Why there's a visual glitch when I play the video?
-<img src="github\prev4.jpg">
+<img src=".github\prev4.jpg">
 
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
