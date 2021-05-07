@@ -18,7 +18,7 @@ If !errorlevel! Equ 3 (
 :Conv
 If Exist "source\*.mp4" (
     Cls
-    Echo.[List of available video]
+    Echo.[List of unconverted video]
     Echo.
     For /f "Tokens=*" %%A In ('Dir /b "source"') Do If /i "%%~xA" == ".mp4" Echo.• %%~nA
     Echo.
@@ -26,6 +26,7 @@ If Exist "source\*.mp4" (
     Set /p "video=Video name » "
     If Not Defined video Goto :Menu
     If Not Exist "source\!video!.mp4" Goto :Conv
+    If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
     For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
@@ -41,7 +42,7 @@ If Exist "source\*.mp4" (
 :Unzip
 If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
     Cls
-    Echo.[List of available video]
+    Echo.[List of available archived video]
     Echo.
     For /f "Tokens=*" %%A In ('Dir /b "source"') Do If /i "%%~xA" == ".zip" Echo.• %%~nA
     Echo.
