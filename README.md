@@ -2,12 +2,12 @@
 <h6 align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</h6>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
-<p align="center">Archive Extraction and Image Sequencing</p>
-<p align="center"><img src=".github\prev1.jpg"></p>
-
-___
 <p align="center">Video Extraction & Conversion UI Menu</p>
 <p align="center"><img src=".github\prev2.jpg"></p>
+
+___
+<p align="center">Archive Extraction and Image Sequencing</p>
+<p align="center"><img src=".github\prev1.jpg"></p>
 
 ___
 <p align="center">Animation Preview</p>
