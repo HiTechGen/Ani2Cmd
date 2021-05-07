@@ -58,7 +58,7 @@ ___
 
 📧 techlord4lyfans@gmail.com
 
-F [Facebook](https://www.facebook.com/hitechgen.hi)
+• [Facebook](https://www.facebook.com/hitechgen.hi)
 
 >Add me on Discord.
 
