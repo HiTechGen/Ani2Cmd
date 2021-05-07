@@ -54,7 +54,7 @@ ___
 But maybe it'll be possible soon or you're that person who'll make it possible :)
 ___
 # Feedback
->To submit your feedback please send your statement in the following social media link:
+>To submit your feedback please send your statement in the following e-mail & social media link:
 
 📧 techlord4lyfans@gmail.com
 
