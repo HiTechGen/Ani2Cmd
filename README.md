@@ -6,7 +6,7 @@
 <p align="center"><img src=".github\prev2.jpg"></p>
 
 ___
-<p align="center">Archive Extraction and Image Sequencing</p>
+<p align="center">Homepage UI and Video Archive Extraction/Play</p>
 <p align="center"><img src=".github\prev1.jpg"></p>
 
 ___
