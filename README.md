@@ -34,7 +34,7 @@ ___
 >Q2: I already extract the video archive but why it won't play?
 <img src=".github\prev5.jpg" width="100%;" height="100%;">
 
->A2: You should disable administrator first before you run the program.
+>A2: You should disable the administrator first before you run the program.
 
 <b>How to disable account administrator?</b>
 
