@@ -22,10 +22,10 @@ ___
 >Official release version.
 
 # FAQs
->Q1: Why does visual lines appears when I play the animation?
+>Q1: Why does the animation show unexpected visual lines when I play the animation?
 <img src=".github\prev4.jpg" width="50%;" height="50%;">
 
->A1: It occurs because "cmddraw" loads the frame similar to a retro tv.
+>A1: It occurs because "cmddraw" loads the frame similar to how retro tv does.
 <br>
 <b>Factors that might cause the visual lines to appear:</b>
 
