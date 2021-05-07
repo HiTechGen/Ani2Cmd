@@ -25,9 +25,9 @@ ___
 >Official release version.
 
 # FAQs
->Why there's a visual glitch when I play the video?
+>Q: Why there's a visual glitch when I play the video?
 <img src=".github\prev4.jpg" width="256px" height="128px">
-
+*A:*
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
 
