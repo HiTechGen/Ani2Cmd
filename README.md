@@ -46,7 +46,7 @@ ___
 
 <b>Click the link below to download powershell:</b>
 
-• [Powershell Download](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
+• [Powershell Download ⬇️](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
 ___
 >Q4: Why there's no sound!?
 
@@ -56,7 +56,7 @@ ___
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
 
-• [Gmail](techlord4lyfans@gmail.com)
+• techlord4lyfans@gmail.com
 
 • [Facebook](https://www.facebook.com/hitechgen.hi)
 
