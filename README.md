@@ -50,7 +50,7 @@ ___
 ___
 >Q4: Why there's no sound!?
 
->A4: As stated in the "description", it doesn't support audio due to the complicated syncing of both video & audio.
+>A4: As stated in the "Description", it doesn't support audio due to the complicated syncing of both video & audio.
 But maybe it'll be possible in the future :)
 ___
 # Feedback
