@@ -26,7 +26,7 @@ ___
 <img src=".github\prev4.jpg" width="50%;" height="50%;">
 
 >A1: It occurs because "cmddraw" loads the frame similar to how retro tv does.
-<br>
+
 <b>Factors that might cause the visual lines to appear:</b>
 
 • [Unavailable for a moment].
