@@ -47,7 +47,12 @@ ___
 <b>Click the link below to download powershell:</b>
 
 • https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1
+___
+>Q4: Why there's no sound!?
 
+>A4: As stated in the "description", it doesn't support audio due to the complicated syncing of both video & audio.
+But maybe it'll be possible in the future :)
+___
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
 
