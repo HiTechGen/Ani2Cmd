@@ -6,7 +6,7 @@
 <p align="center"><img src=".github\prev1.jpg"></p>
 
 ___
-<p align="center">Video Extraction/Conversion UI Menu</p>
+<p align="center">Video Extraction & Conversion UI Menu</p>
 <p align="center"><img src=".github\prev2.jpg"></p>
 
 ___
