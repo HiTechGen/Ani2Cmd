@@ -25,9 +25,9 @@ ___
 >Official release version.
 
 # FAQs
->Q: Why there's a visual glitch when I play the video?
+>Q: Why there's a visual glitch when I play the animation?
 <img src=".github\prev4.jpg" width="256px" height="128px">
-<em>A</em>:
+<em>A</em>: This thing occurs because <em>cmddraw.exe</em> loads the frame similar to a cam recorder.
 
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
