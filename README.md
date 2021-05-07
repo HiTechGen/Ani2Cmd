@@ -14,7 +14,7 @@ ___
 ___
 <p align="center">Animation Preview</p>
 
-<p align="center"><img src=".github\prev3.gif"></p>
+<p align="center"><img src=".github\prev3.gif" width="1366px" height="768"></p>
 
 ___
 
