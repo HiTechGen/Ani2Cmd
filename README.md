@@ -18,8 +18,8 @@ ___
 ## Description
 [Unavailable for a moment].
 
-## Update Version
->Official release version.
+## Update
+>This is the only official release.
 
 # FAQs
 >Q1: Why does the animation show unexpected visual lines when I play the animation?
