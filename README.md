@@ -4,21 +4,17 @@
 <h2 align="center">SHOWCASE</h2>
 <p align="center">Archive Extraction and Image Sequencing</p>
   
-<p align="center"><img src=".github\prev1.png" alt="Sublime's custom image"/></p>
+<p align="center"><img src=".github\prev1.jpg"></p>
 
 ___
 <p align="center">Video Extraction/Conversion UI Menu</p>
 
-<p align="center">
-  <img src=".github\prev2.png" alt="Sublime's custom image"/>
-</p>
+<p align="center"><img src=".github\prev2.jpg"></p>
 
 ___
 <p align="center">Animation Preview</p>
 
-<p align="center">
-  <img src=".github\prev3.gif" alt="Sublime's custom image"/>
-</p>
+<p align="center"><img src=".github\prev3.gif"></p>
 
 ___
 
@@ -26,10 +22,11 @@ ___
 [Unavailable for a moment].
 
 ## Update Version
-> Official release version.
+>Official release version.
 
 # FAQs
-[Unavailable for a moment].
+>Why there's a visual glitch when I play the video?
+<img src="github\prev4.jpg">
 
 # Feedback
 >To submit your feedback please send your statement in the following social media link:
