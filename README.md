@@ -41,6 +41,7 @@ ___
 >A3: You probably don't have powershell installed in your PC.
 
 <b>Click the link below to download powershell:</b>
+
 • https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1
 
 # Feedback
