@@ -30,12 +30,12 @@ ___
 <b>Factors that might cause the visual lines to appear:</b>
 
 • [Unavailable for a moment].
-
+___
 >Q2: I already extract the video archive but why it won't play?
 <img src=".github\prev5.jpg" width="50%;" height="50%;">
 
 >A2: You should disable administrator first before you run the program.
-
+___
 >Q3: Why it do nothing when I input the video archive in extract/convert UI?
 
 >A3: You probably don't have powershell installed in your PC.
