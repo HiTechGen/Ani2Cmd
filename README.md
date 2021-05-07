@@ -38,7 +38,7 @@ ___
 
 <b>How to disable account administrator?</b>
 
-• Use the Command Prompt instructions below for Windows 10 Home. Right-click the Start menu (or press Windows key + X) > Computer Management, then expand Local Users and Groups > Users. Select the Administrator account, right click on it then click Properties. Uncheck Account is disabled, click Apply then OK.
+• Right-click the Start menu (or press Windows key + X) > Computer Management, then expand Local Users and Groups > Users. Select the Administrator account, right click on it then click Properties. Uncheck Account is disabled, click Apply then OK.
 ___
 >Q3: Why it do nothing when I input the video archive in extract/convert UI?
 
