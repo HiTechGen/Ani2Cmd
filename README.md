@@ -1,7 +1,7 @@
 <p align="center"><img src=".github\title.png" width="100%;" height="100%;"></p>
 <p align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</p>
 <br>
-<h2 align="center">SHOWCASE</h2>
+<h1 align="center"><b>SHOWCASE</b></h1>
 <p align="center">Archive Extraction and Image Sequencing</p>
 <p align="center"><img src=".github\prev1.jpg"></p>
 
