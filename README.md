@@ -23,6 +23,7 @@ ___
 >Compatibility
 
 • Program can run with or without administrator.
+
 • Full screen works on any windows verison.
 
 >Features
@@ -30,6 +31,7 @@ ___
 • Simple UI controls:
 
 ⇒ It consist of set input and choice command.
+
 • Conversion:
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
