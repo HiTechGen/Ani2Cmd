@@ -13,8 +13,6 @@ ___
 <p align="center">Animation Preview</p>
 <p align="center"><img src=".github\prev3.gif" width="100%;" height="100%;"></p>
 
-___
-
 <h3>Description</h3>
 
 ___
