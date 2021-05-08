@@ -17,6 +17,7 @@ If !errorlevel! Equ 3 (
 )
 :Conv
 If Exist "source\*.mp4" (
+    Set "video="
     Cls
     Echo.[List of unconverted video]
     Echo.
@@ -32,7 +33,7 @@ If Exist "source\*.mp4" (
     For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
     For /l %%A In (1,2,!jpg!) Do Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
-    For /l %%A In (2,2,!jpg!) Do FFmpeg.exe -i "!tmp!\seq\F%%A.jpg" -y -q:v 0 -s 640x360 "!tmp!/seq/M%%A.jpg"
+    For /l %%A In (2,2,!jpg!) Do FFmpeg.exe -i "!tmp!\seq\F%%A.jpg" -y -q:v 0 -s 640x360 "!tmp!/seq/M%%A.jpg" 2>Nul
     If Not Exist "source" Md "source"
     Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
     Ren "source\zipping.zip" "!video!.zip"
