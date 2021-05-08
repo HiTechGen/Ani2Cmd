@@ -1,5 +1,5 @@
 <p align="center"><img src=".github\title.png" width="50%;" height="50%;"></p>
-<h6 align="center">Ani2Cmd (Animated To Cmd). Is a program that allows the user to play animated video in Batch File</h6>
+<h6 align="center">Program that allows the user to play animated video in Batch File</h6>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
 <p align="center">Video Extraction & Conversion UI Menu</p>
@@ -16,20 +16,36 @@ ___
 ___
 
 ## Description
-[Unavailable for a moment].
-
+___
+>Ani2Cmd (Animated To Cmd) is a program that gives batch file the ability to play video animation thru the help of external plugins. Video length won't matter as the user can play video longer than one minute except the fact that it'll consume much more time and storage space to convert mp4 to video archive. The animation works by loading image sequence in even pattern. Audio isn't supported due to the issue of synchronizing sound and animation sequence.
+___
 ## Updates
->This is the only official release.
+>Compatibility
+
+• Program can run with or without administrator.
+• Full screen works on any windows verison.
+
+>Features
+
+• Simple UI controls:
+⇒ It consist of set input and choice command.
+• Conversion:
+⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
 # FAQs
->Q1: Why does the animation show unexpected visual lines when I play the animation?
+>Q1: Why does the animation show unexpected visual line when I play the animation?
 <img src=".github\prev4.jpg" width="80%;" height="80%;">
 
 >A1: It occurs because "cmddraw" loads the frame similar to how retro tv work.
 
-<b>Factors that might cause the visual lines to appear:</b>
+<b>Factors that might cause the visual line to appear:</b>
 
-• [Unavailable for a moment].
+• Video doesn't have film bars.
+⇒ Film bars helps to minimize the occurence of visual line.
+• Extremely fast video scene.
+⇒ Any video that loads frame quickly will likely trigger the visual line to appear.
+• Too many colors.
+⇒ If you're to play a scene that consist of colorful background or seizure video it'll probably cause visual line to occur.
 ___
 >Q2: Why it do nothing when I input the video archive in the extract/convert UI?
 
