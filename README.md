@@ -28,8 +28,10 @@ ___
 >Features
 
 • Simple UI controls:
+
 ⇒ It consist of set input and choice command.
 • Conversion:
+
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
 # FAQs
@@ -41,10 +43,13 @@ ___
 <b>Factors that might cause the visual line to appear:</b>
 
 • Video doesn't have film bars.
+
 ⇒ Film bars helps to minimize the occurence of visual line.
 • Extremely fast video scene.
+
 ⇒ Any video that loads frame quickly will likely trigger the visual line to appear.
 • Too many colors.
+
 ⇒ If you're to play a scene that consist of colorful background or seizure video it'll probably cause visual line to occur.
 ___
 >Q2: Why it do nothing when I input the video archive in the extract/convert UI?
