@@ -47,9 +47,11 @@ ___
 • Video doesn't have film bars.
 
 ⇒ Film bars helps to minimize the occurence of visual line.
+
 • Extremely fast video scene.
 
 ⇒ Any video that loads frame quickly will likely trigger the visual line to appear.
+
 • Too many colors.
 
 ⇒ If you're to play a scene that consist of colorful background or seizure video it'll probably cause visual line to occur.
