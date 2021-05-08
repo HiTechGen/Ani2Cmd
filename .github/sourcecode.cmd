@@ -1,5 +1,6 @@
 @Echo Off & Setlocal EnableDelayedExpansion
 @Title Ani2Cmd
+Cd "%~dp0"
 Chcp 65001 >Nul
 Mode Con:Cols=100 Lines=25
 :Menu
@@ -38,7 +39,6 @@ If Exist "source\*.mp4" (
     Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
     Ren "source\zipping.zip" "!video!.zip"
     Set "jpg="
-    Set "video="
 ) Else Goto :Menu
 :Unzip
 If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
@@ -55,8 +55,8 @@ If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
     Ren "source\!video!.zip" "unzipping.zip"
     Powershell expand-archive -path "source\unzipping.zip" -destinationpath "!tmp!/seq"
     Ren "source\unzipping.zip" "!video!.zip"
-    Set "video="
 ) Else Goto :Menu
+Set "video="
 Cls
 Echo.Do you want fullscreen play? (y/n).
 Choice /cs /c:yn /n >Nul
