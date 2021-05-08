@@ -36,9 +36,6 @@ ___
 
 >A2: You should disable the administrator first before you run the program.
 
-<b>How to disable account administrator?</b>
-
-• [(source)](https://www.groovypost.com/howto/enable-disable-built-in-administrator-account-windows-10/#:~:text=Use%20the%20Command%20Prompt%20instructions,disabled%2C%20click%20Apply%20then%20OK.) Right-click the Start menu (or press Windows key + X) > Computer Management, then expand Local Users and Groups > Users. Select the Administrator account, right click on it then click Properties. Uncheck Account is disabled, click Apply then OK.
 ___
 >Q3: Why it do nothing when I input the video archive in the extract/convert UI?
 
