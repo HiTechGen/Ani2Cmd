@@ -31,23 +31,17 @@ ___
 
 • [Unavailable for a moment].
 ___
->Q2: I already extract the video archive but why it won't play?
-<img src=".github\prev5.jpg" width="80%;" height="80%;">
+>Q2: Why it do nothing when I input the video archive in the extract/convert UI?
 
->A2: You should disable the administrator first before you run the program.
-
-___
->Q3: Why it do nothing when I input the video archive in the extract/convert UI?
-
->A3: You probably don't have powershell installed in your PC.
+>A2: You probably don't have powershell installed in your PC.
 
 <b>Click the link below to download powershell:</b>
 
 ⬇️ [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
 ___
->Q4: Why there's no sound!?
+>Q3: Why there's no sound!?
 
->A4: As stated in the description, it doesn't support audio due to the complicated syncing of video and audio.
+>A3: As stated in the description, it doesn't support audio due to the complicated syncing of video and audio.
 But maybe it'll be possible soon or you're the person who will make it possible :)
 ___
 # Feedback
