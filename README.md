@@ -16,6 +16,7 @@ ___
 ___
 
 <h3>Description</h3>
+
 ___
 >Ani2Cmd (Animated To Cmd) is a program that gives batch file the ability to play video animation thru the help of external plugins. Video length won't matter as the user can play video longer than one minute except the fact that it'll consume much more time and storage space to convert mp4 to video archive. The animation works by loading image sequence in even pattern. Audio isn't supported due to the issue of synchronizing sound and animation sequence. This program support FFmpeg as external plugin.
 ___
