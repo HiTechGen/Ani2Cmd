@@ -32,9 +32,12 @@ If Exist "source\*.mp4" (
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
     For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
+    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 40 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
-    For /l %%A In (1,2,!jpg!) Do Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
-    For /l %%A In (2,2,!jpg!) Do FFmpeg.exe -i "!tmp!\seq\F%%A.jpg" -y -q:v 0 -s 640x360 "!tmp!/seq/M%%A.jpg" 2>Nul
+    For /l %%A In (1,2,!jpg!) Do (
+        If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
+        If Exist "!tmp!\seq\M%%A.jpg" Del /s /f /q "!tmp!\seq\M%%A.jpg" >Nul
+    )
     If Not Exist "source" Md "source"
     Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
     Ren "source\zipping.zip" "!video!.zip"
@@ -66,12 +69,15 @@ Pixelfnt.exe 1
 For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B"
 For /l %%. In () Do (
     Set /a "seq=0,fr=8,ms=0,ss=0,mn=0,hr=0"
-    For %%A In (!tmp!\seq\*.jpg) Do Set /a "seq+=1"
+    If /i "!fs!" == "F" For %%A In (!tmp!\seq\F*.jpg) Do Set /a "seq+=2"
+    If /i "!fs!" == "M" For %%A In (!tmp!\seq\M*.jpg) Do Set /a "seq+=2"
     For /l %%A In (2,2,!seq!) Do (
+        If !odevn! Equ 0 Batbox.exe /k_
+        If !errorlevel! Equ 32 (Pause >Nul) Else If !errorlevel! Equ 13 Pause >Nul
         Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
-            Set /a "fr+=15,ss+=1,con=!cols!-!lines!"         
+            Set /a "fr+=8,ss+=1,con=!cols!-!lines!"         
             If /i "!fs!" == "F" If !con! Neq !rs! Fstoggle.exe 1
             If /i "!fs!" == "M" If !con! Neq 280 Mode Con:Cols=640 Lines=360
             If !ss! Equ 60 Set /a "mn+=1,ss=0"
@@ -80,11 +86,11 @@ For /l %%. In () Do (
             If !ss! Leq 9 (Set "tsz1=0") Else If !ss! Geq 10 Set "tsz1="
             If !mn! Leq 9 (Set "tsz2=0") Else If !mn! Geq 10 Set "tsz2="
             If !hr! Leq 9 (Set "tsz3=0") Else If !hr! Geq 10 Set "tsz3="
-            Set /a "ms=%%A/2"
+            Set /a "ms=%%A/2,odevn=!ms! %% 2"
         )
         If /i "!fs!" == "M" (
             If %%A Equ 2 Set /a "seq=!seq!/2"
             Title Ani2Cmd ^| !tsz3!!hr!:!tsz2!!mn!:!tsz1!!ss! ^| !seq!:!ms! ^| !cols!x!lines!
-        ) 
+        )
     )
 )
