@@ -74,6 +74,10 @@ For /l %%. In () Do (
     For /l %%A In (2,2,!seq!) Do (
         If !odevn! Equ 0 Batbox.exe /k_
         If !errorlevel! Equ 32 (Pause >Nul) Else If !errorlevel! Equ 13 Pause >Nul
+        If !errorlevel! Equ 27 (
+            Start ani2cmd.bat
+            Exit
+        )
         Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
