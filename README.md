@@ -39,7 +39,11 @@ ___
 
 ⇒ You can now pause video by pressing 'space bar' or 'enter' button and to unpause it you just have to press any key.
 
-<b>Last update: 05/12/2021 - 03:34 PM</b>
+>Improvements
+
+• <b>New</b> minimize mode speed fixed.
+
+<b>Last update: 05/12/2021 - 04:41 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
