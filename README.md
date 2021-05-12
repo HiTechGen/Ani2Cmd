@@ -39,11 +39,15 @@ ___
 
 ⇒ You can now pause video by pressing 'space bar' or 'enter' button and to unpause it you just have to press any key.
 
+• <b>New</b> Escape menu.
+
+⇒ User can now return to the homepage menu by pressing 'esc' button.
+
 >Improvements
 
 • <b>New</b> minimize mode speed fixed.
 
-<b>Last update: 05/12/2021 - 07:22 PM</b>
+<b>Last update: 05/12/2021 - 08:03 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
