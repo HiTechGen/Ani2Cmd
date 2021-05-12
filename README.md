@@ -35,7 +35,11 @@ ___
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
-<b>Last update: 05/12/2021 - 10:19 AM</b>
+• <b>New</b> pause function.
+
+⇒ You can now pause video by pressing 'space bar' or 'enter' button.
+
+<b>Last update: 05/12/2021 - 03:19 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
