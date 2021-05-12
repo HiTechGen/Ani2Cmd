@@ -35,7 +35,7 @@ ___
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
-<b>Last update: 05/12/2021 - 10:17 AM</b>
+<b>Last update: 05/12/2021 - 10:19 AM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
@@ -47,7 +47,7 @@ ___
 
 • Video doesn't have film bars.
 
-⇒ Film bars helps to minimize the occurence of visual line.
+⇒ Film bars helps to minimize the occurrence of visual line.
 
 • Extremely fast video scene.
 
