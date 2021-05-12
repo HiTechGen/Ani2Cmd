@@ -32,7 +32,7 @@ If Exist "source\*.mp4" (
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
     For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
-    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 36 -s 640x360 "!tmp!/seq/M%%d.jpg"
+    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 45 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
     For /l %%A In (1,2,!jpg!) Do (
         If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
