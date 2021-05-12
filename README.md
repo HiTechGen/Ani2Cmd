@@ -43,7 +43,7 @@ ___
 
 • <b>New</b> minimize mode speed fixed.
 
-<b>Last update: 05/12/2021 - 04:41 PM</b>
+<b>Last update: 05/12/2021 - 07:22 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
