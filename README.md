@@ -23,7 +23,7 @@ ___
 
 • Program can run with or without administrator.
 
-• Full screen works on any windows verison.
+• Full screen works on any windows version.
 
 >Features
 
@@ -34,6 +34,8 @@ ___
 • Conversion:
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
+
+<b>Last update: 05/12/2021</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
