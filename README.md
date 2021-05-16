@@ -35,7 +35,7 @@ ___
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
-• <b>New</b> pause function.
+• <b>New</b> Pause function.
 
 ⇒ You can now pause video by pressing 'space bar' or 'enter' button and to unpause it you just have to press any key.
 
@@ -45,9 +45,9 @@ ___
 
 >Improvements
 
-• <b>New</b> minimize mode speed fixed.
+• <b>New</b> Minimize mode speed fixed.
 
-<b>Last update: 05/12/2021 - 08:03 PM</b>
+<b>Last update: 05/16/2021 - 07:34 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
