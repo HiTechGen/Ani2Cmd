@@ -1,4 +1,4 @@
-<p align="center"><img src=".github\title.png" width="50%;" height="50%;"></p>
+<p align="center"><img src=".github\titl.png" width="50%;" height="50%;"></p>
 <h6 align="center"><b>🎞️Animated Video in Batch File🎞️</b></h6>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
