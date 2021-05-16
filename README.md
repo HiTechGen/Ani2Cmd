@@ -1,4 +1,4 @@
-<p align="center"><img src=".github\titl.png" width="50%;" height="50%;"></p>
+<p align="center"><img src=".github\title.png" width="50%;" height="50%;"></p>
 <h6 align="center"><b>🎞️Animated Video in Batch File🎞️</b></h6>
 <br>
 <h1 align="center"><b>SHOWCASE</b></h1>
@@ -47,7 +47,7 @@ ___
 
 • <b>New</b> Minimize mode speed fixed.
 
-<b>Last update: 05/16/2021 - 07:34 PM</b>
+<b>Last update: 05/16/2021 - 07:39 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
