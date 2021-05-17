@@ -68,7 +68,7 @@ Mode Con:Cols=640 Lines=360
 Pixelfnt.exe 1
 For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B"
 For /l %%. In () Do (
-    Set /a "seq=0,fr=15,ms=0,ss=0,mn=0,hr=0"
+    Set /a "seq=0,fr=22,ms=0,ss=0,mn=0,hr=0"
     If /i "!fs!" == "F" For %%A In (!tmp!\seq\F*.jpg) Do Set /a "seq+=2"
     If /i "!fs!" == "M" For %%A In (!tmp!\seq\M*.jpg) Do Set /a "seq+=2"
     For /l %%A In (2,2,!seq!) Do (
@@ -81,7 +81,7 @@ For /l %%. In () Do (
         Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
-            Set /a "fr+=15,ss+=1,con=!cols!-!lines!"         
+            Set /a "fr+=22,ss+=1,con=!cols!-!lines!"         
             If /i "!fs!" == "F" If !con! Neq !rs! Fstoggle.exe 1
             If /i "!fs!" == "M" If !con! Neq 280 Mode Con:Cols=640 Lines=360
             If !ss! Equ 60 Set /a "mn+=1,ss=0"
