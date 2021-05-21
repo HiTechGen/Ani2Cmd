@@ -1,6 +1,6 @@
 @Echo Off & Setlocal EnableDelayedExpansion
 @Title Ani2Cmd
-Pushd "%~dp0"
+Cd "%~dp0"
 Chcp 65001 >Nul
 Mode Con:Cols=100 Lines=25
 :Menu
@@ -31,7 +31,7 @@ If Exist "source\*.mp4" (
     If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
-    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
+    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 45 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
     FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 45 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
     For /l %%A In (1,2,!jpg!) Do (
@@ -72,13 +72,13 @@ For /l %%. In () Do (
     If /i "!fs!" == "F" For %%A In (!tmp!\seq\F*.jpg) Do Set /a "seq+=2"
     If /i "!fs!" == "M" For %%A In (!tmp!\seq\M*.jpg) Do Set /a "seq+=2"
     For /l %%A In (2,2,!seq!) Do (
-        If !odevn! Equ 0 Batbox.exe /k_
+        Batbox.exe /k_
         If !errorlevel! Equ 32 (Pause >Nul) Else If !errorlevel! Equ 13 Pause >Nul
         If !errorlevel! Equ 27 (
             Start ani2cmd.bat
             Exit
         )
-        Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
+        Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
             Set /a "fr+=22,ss+=1,con=!cols!-!lines!"         
@@ -90,7 +90,7 @@ For /l %%. In () Do (
             If !ss! Leq 9 (Set "tsz1=0") Else If !ss! Geq 10 Set "tsz1="
             If !mn! Leq 9 (Set "tsz2=0") Else If !mn! Geq 10 Set "tsz2="
             If !hr! Leq 9 (Set "tsz3=0") Else If !hr! Geq 10 Set "tsz3="
-            Set /a "ms=%%A/2,odevn=!ms! %% 2"
+            Set /a "ms=%%A/2"
         )
         If /i "!fs!" == "M" (
             If %%A Equ 2 Set /a "seq=!seq!/2"
