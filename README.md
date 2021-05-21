@@ -45,9 +45,11 @@ ___
 
 >Improvements
 
-• <b>New</b> Minimize mode speed fixed.
+• <b>New</b> Minimize mode speed fixed!
 
-<b>Last update: 05/21/2021 - 02:18 PM</b>
+• <b>New</b> Quick frame load for longer video!
+
+<b>Last update: 05/21/2021 - 06:18 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
