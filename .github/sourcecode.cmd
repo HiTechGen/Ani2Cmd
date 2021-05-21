@@ -1,6 +1,6 @@
 @Echo Off & Setlocal EnableDelayedExpansion
 @Title Ani2Cmd
-Cd "%~dp0"
+Pushd "%~dp0"
 Chcp 65001 >Nul
 Mode Con:Cols=100 Lines=25
 :Menu
