@@ -49,7 +49,7 @@ ___
 
 • <b>New</b> Quick frame load for longer video!
 
-<b>Last update: 05/26/2021 - 06:38 PM</b>
+<b>Last update: 05/26/2021 - 07:12 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
