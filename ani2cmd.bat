@@ -74,10 +74,10 @@ For /l %%. In () Do (
             Start ani2cmd.bat
             Exit
         )
-        For /l %%a In (0,1,6000) Do If %%a Equ 0 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
+        For /l %%a In (0,1,6000) Do If %%a Equ 6000 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
-            Set /a "fr+=20,ss+=1,con=!cols!-!lines!"         
+            Set /a "ms+=1,fr+=20,ss+=1,con=!cols!-!lines!"         
             If /i "!fs!" == "F" If !con! Neq !rs! Fstoggle.exe 1
             If /i "!fs!" == "M" If !con! Neq 280 Mode Con:Cols=640 Lines=360
             If !ss! Equ 60 Set /a "mn+=1,ss=0"
@@ -87,7 +87,7 @@ For /l %%. In () Do (
             If !mn! Leq 9 (Set "tsz2=0") Else If !mn! Geq 10 Set "tsz2="
             If !hr! Leq 9 (Set "tsz3=0") Else If !hr! Geq 10 Set "tsz3="
             Set /a "ms=%%A/2"
-        )
+        )              
         If /i "!fs!" == "M" (
             If %%A Equ 2 Set /a "seq=!seq!/2"
             Title Ani2Cmd ^| !tsz3!!hr!:!tsz2!!mn!:!tsz1!!ss! ^| !seq!:!ms! ^| !cols!x!lines!
