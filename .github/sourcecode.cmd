@@ -74,7 +74,7 @@ For /l %%. In () Do (
             Start ani2cmd.bat
             Exit
         )
-        For /l %%a In (0,2,12000) Do If %%a Equ 0 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
+        For /l %%a In (0,1,6000) Do If %%a Equ 0 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
             Set /a "fr+=20,ss+=1,con=!cols!-!lines!"         
