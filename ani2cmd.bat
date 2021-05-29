@@ -31,8 +31,8 @@ If Exist "source\*.mp4" (
     If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
-    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 35 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
-    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 35 -s 640x360 "!tmp!/seq/M%%d.jpg"
+    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 40 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
+    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 40 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
     For /l %%A In (1,2,!jpg!) Do (
         If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
@@ -68,7 +68,7 @@ Mode Con:Cols=640 Lines=360
 Pixelfnt.exe 1
 For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B"
 For /l %%. In () Do (
-    Set /a "seq=0,fr=17,ms=0,ss=0,mn=0,hr=0"
+    Set /a "seq=0,fr=20,ms=0,ss=0,mn=0,hr=0"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "seq+=1"
     For /l %%A In (2,2,!seq!) Do (
         Batbox.exe /k_
@@ -81,7 +81,7 @@ For /l %%. In () Do (
         Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
-            Set /a "fr+=17,ss+=1,con=!cols!-!lines!"         
+            Set /a "fr+=20,ss+=1,con=!cols!-!lines!"         
             If /i "!fs!" == "F" If !con! Neq !rs! Fstoggle.exe 1
             If /i "!fs!" == "M" If !con! Neq 280 Mode Con:Cols=640 Lines=360
             If !ss! Equ 60 Set /a "mn+=1,ss=0"
