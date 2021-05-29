@@ -55,7 +55,7 @@ ___
 
 ⇒ The program have the ability to reduce CPU usage by 5% to 10% as it familiarize the whole video sequence.
 
-<b>Last update: 05/29/2021 - 04:15 PM</b>
+<b>Last update: 05/29/2021 - 04:53 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
