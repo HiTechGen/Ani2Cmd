@@ -1,6 +1,5 @@
 @Echo Off & Setlocal EnableDelayedExpansion
-@Title Ani2Cmd
-Pushd "%~dp0"
+@Title Ani2Cmd & Pushd "%~dp0"
 Chcp 65001 >Nul
 Mode Con:Cols=100 Lines=25
 :Menu
@@ -31,12 +30,15 @@ If Exist "source\*.mp4" (
     If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
-    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 28 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
-    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 28 -s 640x360 "!tmp!/seq/M%%d.jpg"
+    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Start /b /w "" FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 30 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
+    Start /b /w "" FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 30 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
-    For /l %%A In (1,2,!jpg!) Do (If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul & If Exist "!tmp!\seq\M%%A.jpg" Del /s /f /q "!tmp!\seq\M%%A.jpg" >Nul)
+    For /l %%A In (1,2,!jpg!) Do (
+        If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
+        If Exist "!tmp!\seq\M%%A.jpg" Del /s /f /q "!tmp!\seq\M%%A.jpg" >Nul
+    )
     If Not Exist "source" Md "source"
-    Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
+    Start /b /w "" Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
     Ren "source\zipping.zip" "!video!.zip"
     Set "jpg="
 ) Else Goto :Menu
@@ -53,7 +55,7 @@ If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
     If Not Exist "source\!video!.zip" Goto :Unzip
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Ren "source\!video!.zip" "unzipping.zip"
-    Powershell expand-archive -path "source\unzipping.zip" -destinationpath "!tmp!/seq"
+    Start /b /w "" Powershell expand-archive -path "source\unzipping.zip" -destinationpath "!tmp!/seq"
     Ren "source\unzipping.zip" "!video!.zip"
 ) Else Goto :Menu
 Set "video="
@@ -68,13 +70,13 @@ For /l %%. In () Do (
     Set /a "seq=0,fr=20,ms=0,ss=0,mn=0,hr=0"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "seq+=1"
     For /l %%A In (2,2,!seq!) Do (
-        Batbox.exe /k_
+        Start /b /w "" Batbox.exe /k_
         If !errorlevel! Equ 32 (Pause >Nul) Else If !errorlevel! Equ 13 Pause >Nul
         If !errorlevel! Equ 27 (
             Start ani2cmd.bat
             Exit
         )
-        For /l %%a In (0,1,6000) Do If %%a Equ 6000 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
+        Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
             Set /a "ms+=1,fr+=20,ss+=1,con=!cols!-!lines!"         
