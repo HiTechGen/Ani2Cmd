@@ -31,13 +31,10 @@ If Exist "source\*.mp4" (
     If Exist "source\!video!.zip" Goto :Conv
     If Not Exist "!tmp!\seq" Md "!tmp!/seq"
     Del /s /f /q "!tmp!\seq\*.jpg" >Nul 2>&1
-    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 40 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
-    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 40 -s 640x360 "!tmp!/seq/M%%d.jpg"
+    For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 28 -s %%Ax%%B "!tmp!/seq/F%%d.jpg"
+    FFmpeg.exe -i "source\!video!.mp4" -y -q:v 0 -r 28 -s 640x360 "!tmp!/seq/M%%d.jpg"
     For %%A In (!tmp!\seq\*.jpg) Do Set /a "jpg+=1"
-    For /l %%A In (1,2,!jpg!) Do (
-        If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul
-        If Exist "!tmp!\seq\M%%A.jpg" Del /s /f /q "!tmp!\seq\M%%A.jpg" >Nul
-    )
+    For /l %%A In (1,2,!jpg!) Do (If Exist "!tmp!\seq\F%%A.jpg" Del /s /f /q "!tmp!\seq\F%%A.jpg" >Nul & If Exist "!tmp!\seq\M%%A.jpg" Del /s /f /q "!tmp!\seq\M%%A.jpg" >Nul)
     If Not Exist "source" Md "source"
     Powershell compress-archive "!tmp!\seq\*.jpg" "source/zipping.zip"
     Ren "source\zipping.zip" "!video!.zip"
@@ -77,8 +74,7 @@ For /l %%. In () Do (
             Start ani2cmd.bat
             Exit
         )
-        Ping localhost -n 1 >Nul
-        Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
+        For /l %%a In (0,2,12000) Do If %%a Equ 0 Start /b "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
         If !ms! Equ !fr! (
             Call Getdim.bat lines cols >Nul 2>&1
             Set /a "fr+=20,ss+=1,con=!cols!-!lines!"         
