@@ -51,7 +51,7 @@ ___
 
 • <b>New</b> Reduced CPU usage to avoid overheating and Fps drop.
 
-<b>Last update: 05/29/2021 - 11:46 AM</b>
+<b>Last update: 05/29/2021 - 11:51 AM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
