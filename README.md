@@ -49,9 +49,9 @@ ___
 
 • <b>New</b> Quick frame load for longer video!
 
-• <b>New</b> Reduce CPU usage to avoid overheating.
+• <b>New</b> Reduced CPU usage to avoid overheating and Fps drop.
 
-<b>Last update: 05/26/2021 - 10:11 PM</b>
+<b>Last update: 05/29/2021 - 11:46 AM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
