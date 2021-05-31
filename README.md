@@ -57,7 +57,7 @@ ___
 
 • <b>New</b> Less CPU usage for better performance!
 
-<b>Last update: 05/31/2021 - 09:03 PM</b>
+<b>Last update: 05/31/2021 - 09:08 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
