@@ -72,7 +72,6 @@ For /l %%. In () Do (
         Set /a "fr=20,total=0"
         For %%A In (!tmp!\seq\*.jpg) Do Set /a "total+=1"
     )
-    Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!!seq!.jpg" /x 0 /y 0
     If !seq! Geq !fr! (
         Call Getdim.bat lines cols >Nul 2>&1
         Set /a "fr=!seq!!op!20,con=!cols!-!lines!"
@@ -81,6 +80,7 @@ For /l %%. In () Do (
     )
     If Exist "!tmp!\seq\!fs!!seq!.jpg" (Set /a "seq!op!=2") Else If Not Exist "!tmp!\seq\!fs!!seq!.jpg" Set "seq=2"
     Set "op=+"
+    Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!!seq!.jpg" /x 0 /y 0
     Start /b /w "" Batbox.exe /k_
     If !errorlevel! Equ 330 Set "op=-"
     If !errorlevel! Equ 332 Set /a "seq+=50"
