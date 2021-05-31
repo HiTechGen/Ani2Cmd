@@ -55,11 +55,9 @@ ___
 
 • Quick frame load for longer video!
 
-• <b>New</b> Reduced CPU usage to avoid overheating and fps drop.
+• <b>New</b> Less CPU usage for better performance!
 
-⇒ The program have the ability to reduce CPU usage by 5% to 10% as it familiarize the whole video sequence.
-
-<b>Last update: 05/31/2021 - 06:02 PM</b>
+<b>Last update: 05/31/2021 - 06:05 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
