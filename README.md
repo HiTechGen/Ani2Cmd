@@ -37,7 +37,7 @@ ___
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
-• <b>New</b> Pause function & Replay:
+• <b>New</b> Pause & Replay function:
 
 ⇒ You can now pause/replay video sequence by pressing 'space bar' button and to unpause it you just have to press any key.
 
@@ -59,7 +59,7 @@ ___
 
 ⇒ The program have the ability to reduce CPU usage by 5% to 10% as it familiarize the whole video sequence.
 
-<b>Last update: 05/31/2021 - 05:58 PM</b>
+<b>Last update: 05/31/2021 - 06:02 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
