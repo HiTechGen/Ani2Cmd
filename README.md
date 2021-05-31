@@ -43,7 +43,7 @@ ___
 
 • <b>New</b> Escape menu:
 
-⇒ User can now return to the homepage menu by pressing 'esc' button.
+⇒ User can now return to homepage menu by pressing 'esc' button.
 
 • <b>New</b> Rewind & Fast Forward function:
 
@@ -57,7 +57,7 @@ ___
 
 • <b>New</b> Less CPU usage for better performance!
 
-<b>Last update: 05/31/2021 - 06:05 PM</b>
+<b>Last update: 05/31/2021 - 06:13 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
