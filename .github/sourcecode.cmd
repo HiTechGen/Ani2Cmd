@@ -63,8 +63,10 @@ Set "video="
 Cls
 Echo.Do you want fullscreen play? (y/n).
 Choice /cs /c:yn /n >Nul
-If !errorlevel! Equ 1 (Set "fs=F") Else If !errorlevel! Equ 2 Set "fs=M"
-Mode Con:Cols=640 Lines=360
+If !errorlevel! Equ 1 (Set "fs=F") Else If !errorlevel! Equ 2 (
+    Mode 640,360
+    Set "fs=M"
+)
 Pixelfnt.exe 1
 For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B,seq=2"
 For /l %%. In () Do (
