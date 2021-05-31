@@ -1,7 +1,8 @@
 @Echo Off & Setlocal EnableDelayedExpansion
-@Title Ani2Cmd & Pushd "%~dp0"
+@Title Ani2Cmd
+Pushd "%~dp0"
 Chcp 65001 >Nul
-Mode Con:Cols=100 Lines=25
+Mode 100,25
 :Menu
 Cls
 Echo.(1) Extract or Play Animation
@@ -65,34 +66,29 @@ Choice /cs /c:yn /n >Nul
 If !errorlevel! Equ 1 (Set "fs=F") Else If !errorlevel! Equ 2 Set "fs=M"
 Mode Con:Cols=640 Lines=360
 Pixelfnt.exe 1
-For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B"
+For /f "Skip=1 Tokens=1,3" %%A In ('Wmic path Win32_VideoController get VideoModeDescription') Do Set /a "rs=%%A-%%B,seq=2"
 For /l %%. In () Do (
-    Set /a "seq=0,fr=20,ms=0,ss=0,mn=0,hr=0"
-    For %%A In (!tmp!\seq\*.jpg) Do Set /a "seq+=1"
-    For /l %%A In (2,2,!seq!) Do (
-        Start /b /w "" Batbox.exe /k_
-        If !errorlevel! Equ 32 (Pause >Nul) Else If !errorlevel! Equ 13 Pause >Nul
-        If !errorlevel! Equ 27 (
-            Start ani2cmd.bat
-            Exit
-        )
-        Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!%%A.jpg" /x 0 /y 0
-        If !ms! Equ !fr! (
-            Call Getdim.bat lines cols >Nul 2>&1
-            Set /a "ms+=1,fr+=20,ss+=1,con=!cols!-!lines!"         
-            If /i "!fs!" == "F" If !con! Neq !rs! Fstoggle.exe 1
-            If /i "!fs!" == "M" If !con! Neq 280 Mode Con:Cols=640 Lines=360
-            If !ss! Equ 60 Set /a "mn+=1,ss=0"
-            If !mn! Equ 60 Set /a "hr+=1,mn=0"
-        ) Else (
-            If !ss! Leq 9 (Set "tsz1=0") Else If !ss! Geq 10 Set "tsz1="
-            If !mn! Leq 9 (Set "tsz2=0") Else If !mn! Geq 10 Set "tsz2="
-            If !hr! Leq 9 (Set "tsz3=0") Else If !hr! Geq 10 Set "tsz3="
-            Set /a "ms=%%A/2"
-        )              
-        If /i "!fs!" == "M" (
-            If %%A Equ 2 Set /a "seq=!seq!/2"
-            Title Ani2Cmd ^| !tsz3!!hr!:!tsz2!!mn!:!tsz1!!ss! ^| !seq!:!ms! ^| !cols!x!lines!
-        )
+    If !seq! Equ 2 (
+        Set /a "fr=20,total=0"
+        For %%A In (!tmp!\seq\*.jpg) Do Set /a "total+=1"
     )
+    Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!!seq!.jpg" /x 0 /y 0
+    If !seq! Geq !fr! (
+        Call Getdim.bat lines cols >Nul 2>&1
+        Set /a "fr=!seq!!op!20,con=!cols!-!lines!"
+        If /i "!fs!" == "F" If !con! Neq !rs! Start /b /w "" Fstoggle.exe 1
+        If /i "!fs!" == "M" If !con! Neq 280 Mode 640,360
+    )
+    If Exist "!tmp!\seq\!fs!!seq!.jpg" (Set /a "seq!op!=2") Else If Not Exist "!tmp!\seq\!fs!!seq!.jpg" Set "seq=2"
+    Set "op=+"
+    Start /b /w "" Batbox.exe /k_
+    If !errorlevel! Equ 330 Set "op=-"
+    If !errorlevel! Equ 332 Set /a "seq+=50"
+    If !errorlevel! Equ 27 (Start /i "" ani2cmd.bat & Exit)
+    If !errorlevel! Equ 32 (
+        If !seq! Lss !total! Pause >Nul
+        If !seq! Equ !total! Set /a "seq=2"
+    )
+    Title Ani2Cmd [!total!:!seq!] !cols!x!lines!
+    If !seq! Lss 2 (Set "seq=2") Else If !seq! Equ !total! Set /a "seq-=2"
 )
