@@ -37,25 +37,29 @@ ___
 
 ⇒ Instead of overwriting the existing video archive it'll then refresh the conversion UI.
 
-• <b>New</b> Pause function.
+• <b>New</b> Pause function & Replay:
 
-⇒ You can now pause video by pressing 'space bar' or 'enter' button and to unpause it you just have to press any key.
+⇒ You can now pause/replay video sequence by pressing 'space bar' button and to unpause it you just have to press any key.
 
-• <b>New</b> Escape menu.
+• <b>New</b> Escape menu:
 
 ⇒ User can now return to the homepage menu by pressing 'esc' button.
+
+• <b>New</b> Rewind & Fast Forward function:
+
+⇒ This new feature allows you to return to the previous or next frame by pressing/holding [left/right] arrow key.
 
 >Improvements
 
 • Minimize mode speed fixed!
 
-• <b>New</b> Quick frame load for longer video!
+• Quick frame load for longer video!
 
 • <b>New</b> Reduced CPU usage to avoid overheating and fps drop.
 
 ⇒ The program have the ability to reduce CPU usage by 5% to 10% as it familiarize the whole video sequence.
 
-<b>Last update: 05/29/2021 - 09:22 PM</b>
+<b>Last update: 05/31/2021 - 05:58 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
