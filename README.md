@@ -57,7 +57,7 @@ ___
 
 • <b>New</b> Less CPU usage for better performance!
 
-<b>Last update: 05/31/2021 - 09:09 PM</b>
+<b>Last update: 06/01/2021 - 03:16 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
@@ -89,8 +89,8 @@ ___
 ___
 >Q3: Why there's no sound!?
 
->A3: As stated in the description, it doesn't support audio due to the complicated syncing of video and audio.
-But maybe it'll be possible soon or you're the person who will make it possible :)
+>A3: As stated in the description, it doesn't support audio due to the complicated synchronizing of image sequence and audio.
+But maybe it'll be possible soon or maybe you're the one who'll make it possible :)
 ___
 # Feedback
 >To submit your feedback please send your statement in the following e-mail & social media link:
