@@ -51,7 +51,7 @@ ___
 
 • <b>New</b> Loop mode:
 
-⇒ You can play video in loop by pressing 'L'
+⇒ You can play video in loop by pressing 'L' and to unloop it just press 'L' again.
 
 >Improvements
 
@@ -61,7 +61,7 @@ ___
 
 • <b>New</b> Less CPU usage for better performance!
 
-<b>Last update: 06/14/2021 - 06:38 PM</b>
+<b>Last update: 06/14/2021 - 06:40 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
