@@ -39,15 +39,19 @@ ___
 
 • <b>New</b> Pause & Replay function:
 
-⇒ You can now pause/replay video sequence by pressing 'space bar' button and to unpause it you just have to press any key.
+⇒ You can now pause/replay video sequence by pressing 'Space bar' button and to unpause it you just have to press any key.
 
 • <b>New</b> Escape menu:
 
-⇒ User can now return to homepage menu by pressing 'esc' button.
+⇒ User can now return to homepage menu by pressing 'Esc' button.
 
 • <b>New</b> Rewind & Fast Forward function:
 
-⇒ This new feature allows you to return to previous or next frame by pressing/holding [left/right] arrow key.
+⇒ This new feature allows you to return to previous or next frame by pressing/holding [Left/Right] arrow key.
+
+• <b>New</b> Loop mode:
+
+⇒ You can play video in loop by pressing 'L'
 
 >Improvements
 
@@ -57,7 +61,7 @@ ___
 
 • <b>New</b> Less CPU usage for better performance!
 
-<b>Last update: 06/01/2021 - 03:30 PM</b>
+<b>Last update: 06/14/2021 - 06:38 PM</b>
 
 # FAQs
 >Q1: Why does the animation show unexpected visual line when I play the animation?
