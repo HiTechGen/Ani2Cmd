@@ -59,7 +59,6 @@ If Not Exist "!tmp!\seq\*.jpg" If Exist "source\*.zip" (
     Start /b /w "" Powershell expand-archive -path "source\unzipping.zip" -destinationpath "!tmp!/seq"
     Ren "source\unzipping.zip" "!video!.zip"
 ) Else Goto :Menu
-Set "video="
 Cls
 Echo.Do you want fullscreen play? (y/n).
 Choice /cs /c:yn /n >Nul
@@ -84,13 +83,16 @@ For /l %%. In () Do (
     Set "op=+"
     Start /b /w "" Cmddraw.exe /dimg "!tmp!\seq\!fs!!seq!.jpg" /x 0 /y 0
     Start /b /w "" Batbox.exe /k_
-    If !errorlevel! Equ 330 Set "op=-"
-    If !errorlevel! Equ 332 Set /a "seq+=50"
-    If !errorlevel! Equ 27 (Start /i "" ani2cmd.bat & Exit)
-    If !errorlevel! Equ 32 (
-        If !seq! Lss !total! Pause >Nul
-        If !seq! Equ !total! Set /a "seq=2"
+    If !errorlevel! Gtr 0 (
+        If !errorlevel! Equ 330 Set "op=-"
+        If !errorlevel! Equ 332 Set /a "seq+=50"
+        If !errorlevel! Equ 27 (Start /i "" ani2cmd.bat & Exit)
+        If !errorlevel! Equ 32 (
+            If !seq! Lss !total! Pause >Nul
+            If !seq! Equ !total! Set /a "seq=2"
+        )
+        If Not Defined loop (If !errorlevel! Equ 108 Set "loop= (LOOP)") Else If Defined loop Set "loop="
     )
-    Title Ani2Cmd [!total!:!seq!] !cols!x!lines!
-    If !seq! Lss 2 (Set "seq=2") Else If !seq! Equ !total! Set /a "seq-=2"
+    Title Ani2Cmd ^| !total!:!seq! ^| !cols!x!lines!!loop!
+    If !seq! Lss 2 (Set "seq=2") Else If !seq! Equ !total! If Not Defined loop Set /a "seq-=2"
 )
