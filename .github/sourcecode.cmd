@@ -91,7 +91,7 @@ For /l %%. In () Do (
             If !seq! Lss !total! Pause >Nul
             If !seq! Equ !total! Set /a "seq=2"
         )
-        If Not Defined loop (If !errorlevel! Equ 108 Set "loop= (LOOP)") Else If Defined loop Set "loop="
+        If Not Defined loop (If !errorlevel! Equ 108 Set "loop= (LOOP)") Else If Defined loop If !errorlevel! Equ 108 Set "loop="
     )
     Title Ani2Cmd ^| !total!:!seq! ^| !cols!x!lines!!loop!
     If !seq! Lss 2 (Set "seq=2") Else If !seq! Equ !total! If Not Defined loop Set /a "seq-=2"
